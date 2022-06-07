@@ -1,21 +1,18 @@
 #include "main.h"
-
 /**
- * main-This Function prints _putchar using the local header file
- * Description: Writes a program that prints _putchar, followed by a new line.
- * Return: 0 (Success)
+ * main - Entry point
+ * write a program tha prints Holberton, followed by a new line.
+ * Return: Always (Success)
  */
-
 int main(void)
 {
-	char x[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	unsigned int i;
+	char *ch = "_putchar";
 
-	for (i = 0; i < sizeof(x); i++)
+	while (*ch)
 	{
-		_putchar(x[i]);
+		_putchar(*ch);
+		ch++;
 	}
 	_putchar('\n');
-
 	return (0);
 }
