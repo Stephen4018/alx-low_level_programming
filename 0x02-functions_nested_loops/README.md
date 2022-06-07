@@ -1,0 +1,1 @@
+excersice on nested loops
